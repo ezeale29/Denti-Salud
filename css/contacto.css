@@ -1,0 +1,243 @@
+/*Aquí están los estilos que se aplican en el contenido de la página de contacto...
+ ...(Formulario y tabla que la acompaña*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contactoContainer{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    gap: 15px;
+}
+.tituloContacto{
+    display: flex;
+    justify-content: center;
+    padding:5px;
+    padding-top: 20px;
+
+}
+.infoContactanos{
+    background: #e6e6e6;
+    border-bottom: 1px solid #33333362;
+}
+.infoContactanos__tituloContacto{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.infoContactanos__tituloContacto h3{
+    background-color: #cccccc;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.infoContactanos__tituloContacto p{
+    padding-top: 10px;
+}
+
+.infoContactanos__img{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+.infoContactanos__iconosContacto{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 100px;
+    justify-items: center;
+}
+.infoContactanos__iconosContacto img{
+    width: auto;
+    height: 40px;
+    padding-left: 20px;
+}
+
+.formContainer{
+    background: #e6e6e6;
+}
+.formulario__titulo{
+    text-align: center;
+    background-color: #cccccc;
+    padding: 10px;
+    border-bottom: 1px solid #33333362;
+}
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	cursor: pointer;
+    padding: 15px;
+}
+.formulario__grupo{
+    border-bottom: 1px solid #33333362;
+    padding-bottom: 15px;
+}
+.seleccion{
+    padding-left: 17px;
+    padding-right: 15px;
+}
+.formulario__grupo-input {
+	position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #4bae4f;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	padding-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+    padding-top: 5px;
+    padding-left: 16px;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	padding-right: 10px;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	padding: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    padding: 15px;
+    
+}
+
+.formulario__btn {
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 5px;
+    color: rgb(253, 253, 253);
+    transition: .5s;
+    background: #17280b;
+	border: none;
+	border-radius: 5px;
+    border-color: black;
+	cursor: pointer;
+	transition: .5s ease all;
+}
+
+.formulario__btn:hover {
+    transition: .5s;
+    background: #4bae4f;
+    color: rgb(0, 0, 0);
+}
+
+.formulario__mensaje-exito {
+	font-size: 18px;
+	color: white;
+	display: none;
+    background-color: #4bae4f;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+    width: 100%;
+}
+.formulario__grupo select{
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 10px;
+    font-size: 15px;
+    transition: .5s;
+}
+
+.formulario__grupo select:hover{
+    transition: .5s;
+    background: #4bae4f;
+    color: rgb(0, 0, 0);
+}
+.formulario__grupo textarea {
+    width: 100%;
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+textarea::placeholder {
+    padding-top: 5px;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+    padding-right: 10px;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+    padding-right: 10px;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+    padding-right: 10px;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+    padding-right: 10px;
+}

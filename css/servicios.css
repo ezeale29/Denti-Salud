@@ -1,0 +1,93 @@
+
+/*--------------------------------------------------------------*/
+
+.horarios{
+    width: auto;
+    background-color: #7acb5a;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    color: #ffffff;
+}
+
+.caja1{
+    display: inline-flex;
+}
+.caja1 img{
+    height:60px;
+    width: 60px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.horarios div{
+    padding: 5px;
+}
+.boton_horarios{
+    display: inline-flex;
+    align-items: center;
+}
+.boton{
+    padding: 10px;
+}
+
+.btserv{
+    cursor: pointer;
+    transition: .2s;
+    color: #ffffff;
+    background-color: #4bae4f;
+    font-family: Poppins, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 4px 4px #cccccc;
+    border: none;
+}
+
+.boton.boton_horarios .btserv {
+    box-shadow:none;
+    border: none;
+}
+
+.btserv:hover{
+    transition: .2s;
+    color: #cefe96;
+    font-size: 15px;
+}
+.servicios{
+    width: auto;
+    padding: 20px;
+    display: grid;
+    gap:1px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+    justify-content: center;
+    background-color: #e6e6e6;
+    margin: 0;
+}
+
+.servicios img {
+    width: 100%;
+    height: auto;
+}
+.serv{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    background-color: #ffffff;
+    color: #4bae4f;
+    box-shadow: 2px 2px 8px 4px #cccccc;
+}
+
+.serv p{
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: left;
+    color: #989a9d;
+    font-size: 15px;
+}
+
+/*--------------------------------------------------------------*/

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/x-icon" href="../img/logo/favicon.png">
+    <title>DentiSalud</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentiSalud Contacto</title>
+
+    <link rel="stylesheet" href="../css\index.css" /> <!-- Enlace a estilos del index-->
+    <link rel="stylesheet" href="../css\navBar.css"> <!-- Enlace a estilos de la barra de navegacion-->
+    <link rel="stylesheet" href="../css\contacto.css"> <!-- Enlace a estilos de la página de contacto-->
+    <link rel="stylesheet" href="../css\mediaQueries.css"> <!-- Enlace a estilos responsive-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>DentiSalud</h1>
+        <h2>Servicios odontológicos</h2>
+        
+        <!-- Urgencias. Mensaje que aparece arriba de todo. Estilos en index.css -->
+        <div class="urgencias">
+            <p>Para urgencias comunicarse las <strong>24 hs</strong> al teléfono <strong>+54 - 11 - 555 - 8745</strong>
+            </p>
+        </div>
+        <!-- Barra de navegacion (tiene su propio archivo de estilos.) -->
+        <nav class="navbar NavContainer" id="nav">
+            <a href="../index.html"> <img src="../img/logo/DentiSalud-isologo.png" class="navbar__logo"></a>
+            <ul class="navbar__links">
+                <li class="navbar__item">
+                    <a href="../index.html" class="navbar__link">INICIO</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="../html\servicios.html" class="navbar__link">SERVICIOS</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="../html\nosotros.html" class="navbar__link">NOSOTROS</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="../html\contacto.html" class="navbar__link" id="actualPage">CONTACTO</a>
+                    <!-- el id="actualPage" remarca la página actual de blanco.-->
+                </li>
+            </ul>
+            <a href="#nav" class="navbar__burger">
+                <img src="../img\assets\bx-menu.svg" class="navbar__icon">
+            </a>
+            <a href="#" class="navbar__close">
+                <img src="../img\assets\bxs-x-circle.svg" class="navbar__icon">
+            </a>
+        </nav>
+
+    </header>
+
+
+    <!-- Carousel (estilos en idex.css) -->
+    <div class="carrouselContainer">
+
+        <div class="carrouselContainer__Slides fade">
+            <img src="../img/imagenes/carusel/banner1.png">
+        </div>
+
+        <div class="carrouselContainer__Slides fade">
+            <img src="../img/imagenes/carusel/banner2.png">
+        </div>
+
+        <div class="carrouselContainer__Slides fade">
+            <img src="../img/imagenes/carusel/banner3.png">
+        </div>
+
+        <div class="carrouselContainer__Slides fade">
+            <img src="../img/imagenes/carusel/banner4.png">
+        </div>
+
+    </div>
+    <div class="puntos" style="text-align:center">
+        <span class="punto"></span>
+        <span class="punto"></span>
+        <span class="punto"></span>
+        <span class="punto"></span>
+    </div>
+
+    <!-- Parte central de contacto- Formulario (Estilos en contacto.css) -->
+    <h2 class="tituloContacto">CONTACTO </h2>
+    <div class="contactoContainer">
+        <div class="infoContactanos">
+            <div class="infoContactanos__tituloContacto">
+                <h3><strong>DIRECCIÓN</strong></h3>
+                <span>
+                    <p>Avenida del Libertador 555,</p>
+                    <p>Barrio de Palermo,</p>
+                    <p>Ciudad de Buenos Aires.</p>
+                </span>
+            </div>
+            <div class="infoContactanos__correoContacto infoContactanos__tituloContacto">
+                <h3><strong>CORREO ELECTRÓNICO</strong></h3>
+                <span>
+                    <p>info@dentisalud.com</p>
+                </span>
+            </div>
+            <div class="infoContactanos__telefonoContacto infoContactanos__tituloContacto">
+                <h3><strong>TELÉFONO</strong></h3>
+                <span>
+                    <p>+54 - 11 - 555 - 8745</p>
+                </span>
+            </div>
+            <img class="infoContactanos__img" src="../img\imagenes\contacto\img1_contacto.jpg">
+            <div class="infoContactanos__iconosContacto">
+                <a href="https://www.instagram.com" target="blank">
+                    <img src="../img/imagenes/contacto/instagram_green.png" alt="instagram_verde">
+                </a>
+                <a href="https://www.facebook.com/" target="blank">
+                    <img src="../img/imagenes/contacto/facebook_green.png" alt="facebook_verde">
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=549115558745;text=Hola%20me%20interesa%contactarme%20con%20DentiSalud"
+                    target="blank">
+                    <img src="../img/imagenes/contacto/whatsapp.png" alt="whatsapp_verde">
+                </a>
+            </div>
+        </div>
+        <div class="formContainer">
+            <form action="" class="formulario" id="formulario">
+                <h3 for="formulario" class="formulario__titulo">Formulario de contacto: </h3>
+                <!-- Grupo: Nombre -->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre:</label>
+                    <div class="formulario__grupo-input">
+                        <input required type="text" class="formulario__input" name="nombre" id="nombre"
+                            placeholder="Manuel">
+                        <i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">Este apartado debe estar completo y solo puede contener letras.
+                    </p>
+                </div>
+                <!-- Grupo: Apellido -->
+                <div class="formulario__grupo" id="grupo__apellido">
+                    <label for="apellido" class="formulario__label">Apellido:</label>
+                    <div class="formulario__grupo-input">
+                        <input required type="text" class="formulario__input" name="apellido" id="apellido"
+                            placeholder="Alcaraz">
+                        <i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">Este apartado debe estar completo y solo puede contener letras.
+                    </p>
+                </div>
+
+                <!-- Grupo: Teléfono -->
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Teléfono:</label>
+                    <div class="formulario__grupo-input">
+                        <input required type="text" class="formulario__input" name="telefono" id="telefono"
+                            placeholder="4491234567">
+                        <i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">Este apartado debe estar completo, solo puede contener numeros y
+                        con un maximo de 14 dígitos.
+                    </p>
+                </div>
+                <!-- Grupo: Correo Electronico -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico:</label>
+                    <div class="formulario__grupo-input">
+                        <input required type="email" class="formulario__input" name="correo" id="correo"
+                            placeholder="correo@ejemplo.com">
+                        <i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y
+                        guion bajo. Debe tener un formato de email válido.</p>
+                </div>
+                <!-- Grupo: Tipo de tratamiento -->
+                <div class="formulario__grupo" id="grupo__tratamiento">
+                    <label for="tratamiento" class="formulario__label">Tratamiento:</label>
+                    <div class="seleccion">
+                        <select id="tratamiento" name="tratamiento" placeholder="Seleccione un tipo de tratamiento *">
+                            <option value="odontologia_general">Odontología general</option>
+                            <option value="limpieza_dental">Limpieza</option>
+                            <option value="extracción_dental">Extracción dental</option>
+                            <option value="restauraciones_dentales">Restauraciones</option>
+                            <option value="ortodoncia">Ortodoncia</option>
+                            <option value="endodoncia">Endodoncia o tratamiento de conducto</option>
+                        </select>
+                        <i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+                        <p class="formulario__input-error">Debe seleccionar una opcion.</p>
+                    </div>
+                </div>
+
+                <!-- Grupo: Profesional de preferencia -->
+                <div class="formulario__grupo" id="grupo__profesional">
+                    <label for="profesional" class="formulario__label">Profesional:</label>
+                    <div class="seleccion">
+                        <select id="profesional" name="profesional">
+                            <option value="SinPreferencias">No tengo preferencia</option>
+                            <option value="AnaMartinez">Dra. Ana Martínez</option>
+                            <option value="LuciaMontes">Dra. Lucía Montes</option>
+                            <option value="EnzoPereira">Dr. Enzo Pereira</option>
+                            <option value="LauraGomez">Dra. Laura Gómez</option>
+                        </select>
+                    </div>
+                    <i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+                    <p class="formulario__input-error">Debe seleccionar una opcion.</p>
+                </div>
+
+                <!-- Grupo: Comentario -->
+                <div class="formulario__grupo" id="grupo__comentario">
+
+                    <label for="grupo__comentario" class="formulario__label">Comentario opcional</label>
+                    <div class="seleccion">
+                        <textarea id="comentario"
+                            placeholder="Puede indicar aquí días y horarios de preferencia para su consulta, descripción de dolencias, tratamientos previos, etc."
+                            name="comentario"></textarea>
+                    </div>
+                </div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+                        correctamente. </p>
+                </div>
+
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!
+                        Lo contactaremos a la brevedad.</p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Franja de datos de contacto (estilos en idex.css)-->
+    <section class="contacto">
+        <div>
+            <p><strong>DIRECCIÓN</strong></p>
+            <span>
+                <p>Avenida del Libertador 555,</p>
+                <p>Barrio de Palermo,</p>
+                <p>Ciudad de Buenos Aires.</p>
+            </span>
+        </div>
+        <div>
+            <p><strong>CORREO ELECTRÓNICO</strong></p>
+            <span>
+                <p>info@dentisalud.com</p>
+            </span>
+        </div>
+        <div>
+            <p><strong>TELÉFONO</strong></p>
+            <span>
+                <p>+54 - 11 - 555 - 8745</p>
+            </span>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <div id="mapa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6569.201777225135!2d-58.381417!3d-34.588964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab04020fa19%3A0x1d46fde3337c4ebf!2sAv.%20del%20Libertador%20555%2C%20C1001ABF%20CABA!5e0!3m2!1ses!2sar!4v1682734848220!5m2!1ses!2sar"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer (estilos en idex.css)-->
+    <footer class="footer">
+        <div>
+            <a class="logo_bottom" href="#urgencias"><img src="../img/logo/DentiSalud-logo.png" height="40"></a>
+            <a class="socialmedia" href="https://www.instagram.com" target="blank"><img
+                    src="../img/iconos/instagram.png" alt="instagram_logo" width="30"></a>
+            <a class="socialmedia" href="https://www.facebook.com/" target="blank"><img src="../img/iconos/facebook.png"
+                    alt="facebook_logo" width="30"></a>
+            <a class="socialmedia"
+                href="https://api.whatsapp.com/send?phone=549115558745;text=Hola%20me%20interesa%contactarme%20con%20DentiSalud"
+                target="_blank"><img src="../img/iconos/whatsapp.png" alt="whatsapp_logo" width="30"></a>
+        </div>
+    </footer>
+    <script src="../js\formVerif.js"></script><!-- Script para la verificacion del formulario. - Lucas -->
+    <script src="../js\carrousel.js"></script> <!-- Script para el funcionamiento del carrousel. - Lucas -->
+    <script src="https://kit.fontawesome.com/9475d5fbb9.js" crossorigin="anonymous"></script><!-- Enlace a Font Awesome para íconos del formulario- Lucas -->
+</body>
+
+</html>

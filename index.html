@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="img/logo/favicon.png">
+    <title>DentiSalud</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentiSalud Inicio</title>
+
+    <link rel="stylesheet" href="css/index.css"> <!-- Enlace a estilos del index-->
+    <link rel="stylesheet" href="css\navBar.css"> <!-- Enlace a estilos de la barra de navegacion-->
+    <link rel="stylesheet" href="css\docInfo.css"> <!-- Enlace a estilos de la sección de las tarjetas de doctores-->
+    <link rel="stylesheet" href="css\mediaQueries.css"> <!-- Enlace a estilos responsive-->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>DentiSalud</h1>
+        <h2>Servicios odontológicos</h2>
+        
+        <!-- Urgencias. Mensaje que aparece arriba de todo. Estilos en index.css -->
+        <div class="urgencias">
+            <p>Para urgencias comunicarse las <strong>24 hs</strong> al teléfono <strong>+54 - 11 - 555 - 8745</strong>
+            </p>
+        </div>
+        <!-- Barra de navegacion (tiene su propio archivo de estilos.)
+             Enlace hacia la página Contacto funcionando-->
+        <nav class="navbar NavContainer" id="nav">
+            <a href="index.html"> <img src="img/logo/DentiSalud-isologo.png" class="navbar__logo"></a>
+            <ul class="navbar__links">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__link" id="actualPage">INICIO</a>  <!-- el id="actualPage" remarca la página actual de blanco.-->
+                </li>
+                <li class="navbar__item">
+                    <a href="html\servicios.html" class="navbar__link">SERVICIOS</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="html\nosotros.html" class="navbar__link">NOSOTROS</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="html\contacto.html" class="navbar__link">CONTACTO</a>
+                </li>
+            </ul>
+            <a href="#nav" class="navbar__burger">
+                <img src="img\assets\bx-menu.svg" class="navbar__icon">
+            </a>
+            <a href="#" class="navbar__close">
+                <img src="img\assets\bxs-x-circle.svg" class="navbar__icon">
+            </a>
+        </nav>
+
+    </header>
+
+
+    <!-- Carousel (estilos en idex.css) -->
+    <div class="carrouselContainer">
+
+        <div class="carrouselContainer__Slides fade">
+            <img src="img/imagenes/carusel/banner1.png">
+        </div>
+
+        <div class="carrouselContainer__Slides fade">
+            <img src="img/imagenes/carusel/banner2.png">
+        </div>
+
+        <div class="carrouselContainer__Slides fade">
+            <img src="img/imagenes/carusel/banner3.png">
+        </div>
+
+        <div class="carrouselContainer__Slides fade">
+            <img src="img/imagenes/carusel/banner4.png">
+        </div>
+
+    </div>
+    <div class="puntos" style="text-align:center">
+        <span class="punto"></span>
+        <span class="punto"></span>
+        <span class="punto"></span>
+        <span class="punto"></span>
+    </div>
+
+    <!-- Tarjetas de doctores (tiene su propio archivo css) -->
+    <div class="infoTitle">
+        <h3>Nuestros profesionales:</h3>
+    </div>
+    <div class="infoContainer">
+        <div class="infoContainer__box">
+            <div class="infoContainer__box-image">
+                <img src="img\doctores\Enzo-Pereira.jpg" alt="Dr. Enzo Pereira<">
+            </div>
+            <div class="infoContainer__box-name">Dr. Enzo Pereira</div>
+            <p> Especialista en endodoncia.
+            </p>
+        </div>
+        <div class="infoContainer__box">
+            <div class="infoContainer__box-image">
+                <img src="img\doctores\Ana-Martinez.jpg" alt="Dra. Ana Martínez">
+            </div>
+            <div class="infoContainer__box-name">Dra. Ana Martínez </div>
+            <p>Especialista en ortodoncia.
+            </p>
+        </div>
+        <div class="infoContainer__box">
+            <div class="infoContainer__box-image">
+                <img src="img\doctores\Lucia-Montes.jpg" alt="Dra. Lucía Montes">
+            </div>
+            <div class="infoContainer__box-name">Dra. Lucía Montes</div>
+            <p> Especialista en periodoncia.
+            </p>
+        </div>
+        <div class="infoContainer__box">
+            <div class="infoContainer__box-image">
+                <img src="img\doctores\Laura-Gomez.jpg" alt="Dra. Laura Gómez">
+            </div>
+            <div class="infoContainer__box-name">Dra. Laura Gómez</div>
+            <p> Especialista en odontopediatría.
+            </p>
+        </div>
+    </div>
+
+    <!-- Tarjetas blancas centrales (estilos en idex.css) -->
+    <section class="secciones">
+        <div class="subsec">
+            <h3>BIENVENIDO</h3>
+            <img class="imgSubSeccion" src="img/imagenes/index/imagen5_baja.jpg" alt="img_bienvenidos">
+            <div class="textoSecciones textoSeccion-1">
+                <p>¡Les damos la bienvenida al mejor servicio de odontología! Desde revisiones y limpiezas rutinarias
+                    hasta procedimientos más complejos como implantes y endodoncias, ofrecemos una amplia gama de
+                    servicios dentales.</p>
+            </div>
+            <div class="botonSeccion-1">
+                <button onclick="window.location.href='html/contacto.html'">Contactanos</button>
+            </div>
+        </div>
+
+        <div class="subsec">
+            <div class="encabezadoseccion">
+                <h3>NOSOTROS</h3>
+            </div>
+            <div class="textoSecciones textoSeccion-2">
+                <p id="p_verde">En DentiSalud, nos esforzamos por ofrecer una atención odontológica de alta calidad y
+                    personalizada.</p>
+                <p>Nuestro equipo está conformado por profesionales altamente capacitados y comprometidos con la
+                    salud bucal de nuestros pacientes.</p>
+                <p>Para garantizar los mejores resultados, utilizamos materiales y herramientas de alta calidad, así
+                    como tecnología avanzada. Nos mantenemos actualizados con los últimos avances en tecnología y
+                    técnicas dentales.</p>
+            </div>
+            <div class="botonSeccion-2">
+                <button onclick="window.location.href='html/nosotros.html'">Más información</button>
+            </div>
+        </div>
+        <div id="servicios" class="subsec">
+            <div class="encabezadoS">
+                <h3>SERVICIOS</h3>
+            </div>
+            <div>
+                <table border="1" id="table_servicios">
+                    <tr>
+                        <td>
+                            <p>Odontología general</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Estética bucal</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Limpieza</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Implantes</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Endodoncia</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Ortodoncia</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Extracciones</p>
+                        </td>
+                    </tr>
+                </table>
+                <div class="horarioAtencion">
+                    <p> Podes acercarte de Lunes a Viernes de 10h a 19h y los Sábados 9h a 13h.</p>
+                </div>
+            </div>
+            <div class="botonSeccion-3">
+                <button onclick="window.location.href='html/contacto.html'" id="turno">Solicite un turno</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarjetas comentarios (estilos en idex.css)-->
+    <section class="comentarios">
+        <div class="tarjeta">
+            <h3 class="nombre1"></h3>
+            <p>Estoy muy contento con los resultados de mi tratamiento dental. El equipo es profesional y amable, me
+                sentí en confianza desde el principio.</p>
+        </div>
+        <div class="tarjeta">
+            <h3 class="nombre2"></h3>
+            <p>Mejoré mi salud dental gracias al consultorio. Agradezco su atención personalizada y por ayudarme a
+                recuperar mi sonrisa.</p>
+        </div>
+        <div class="tarjeta">
+            <h3 class="nombre3"></h3>
+            <p>Recomiendo ampliamente el consultorio. La atención es excepcional, el ambiente limpio y acogedor y
+                siempre explican detalladamente el proceso.</p>
+        </div>
+    </section>
+
+    <!-- Franja de datos de contacto (estilos en idex.css)-->
+    <section class="contacto">
+        <div>
+            <p><strong>DIRECCIÓN</strong></p>
+            <span>
+                <p>Avenida del Libertador 555,</p>
+                <p>Barrio de Palermo,</p>
+                <p>Ciudad de Buenos Aires.</p>
+            </span>
+        </div>
+        <div>
+            <p><strong>CORREO ELECTRÓNICO</strong></p>
+            <span>
+                <p>info@dentisalud.com</p>
+            </span>
+        </div>
+        <div>
+            <p><strong>TELÉFONO</strong></p>
+            <span>
+                <p>+54 - 11 - 555 - 8745</p>
+            </span>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <div id="mapa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6569.201777225135!2d-58.381417!3d-34.588964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab04020fa19%3A0x1d46fde3337c4ebf!2sAv.%20del%20Libertador%20555%2C%20C1001ABF%20CABA!5e0!3m2!1ses!2sar!4v1682734848220!5m2!1ses!2sar"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer (estilos en idex.css)-->
+    <footer class="footer">
+        <div>
+            <a class="logo_bottom" href="#urgencias"><img src="img/logo/DentiSalud-logo.png" height="40"></a>
+            <a class="socialmedia" href="https://www.instagram.com" target="blank"><img
+                    src="img/iconos/instagram.png" alt="instagram_logo" width="30"></a>
+            <a class="socialmedia" href="https://www.facebook.com/" target="blank"><img src="img/iconos/facebook.png"
+                    alt="facebook_logo" width="30"></a>
+            <a class="socialmedia"
+                href="https://api.whatsapp.com/send?phone=549115558745;text=Hola%20me%20interesa%contactarme%20con%20DentiSalud"
+                target="_blank"><img src="img/iconos/whatsapp.png" alt="whatsapp_logo" width="30"></a>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script> <!-- Script para el funcionamiento de la API. - Lucas -->
+    <script src="js\carrousel.js"></script> <!-- Script para el funcionamiento del carrousel. - Lucas -->
+</body>
+
+</html>

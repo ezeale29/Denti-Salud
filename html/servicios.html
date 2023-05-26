@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="../img/logo/favicon.png">
+    <title>DentiSalud</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentiSalud Servicios</title>
+
+    <link rel="stylesheet" href="../css/index.css"> <!-- Enlace a estilos del index-->
+    <link rel="stylesheet" href="../css\navBar.css"> <!-- Enlace a estilos de la barra de navegacion-->
+    <link rel="stylesheet" href="../css/servicios.css"> <!--Enlace a estilos de servicios-->
+    <link rel="stylesheet" href="../css\mediaQueries.css"> <!-- Enlace a estilos responsive-->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>DentiSalud</h1>
+        <h2>Servicios odontológicos</h2>
+        
+        <!-- Urgencias. Mensaje que aparece arriba de todo. Estilos en index.css -->
+        <div class="urgencias">
+            <p>Para urgencias comunicarse las <strong>24 hs</strong> al teléfono <strong>+54 - 11 - 555 - 8745</strong>
+            </p>
+        </div>
+        <!-- Barra de navegacion (tiene su propio archivo de estilos.)
+             Enlace hacia la página Contacto funcionando-->
+        <nav class="navbar NavContainer" id="nav">
+            <a href="../index.html"> <img src="../img/logo/DentiSalud-isologo.png" class="navbar__logo"></a>
+            <ul class="navbar__links">
+                <li class="navbar__item">
+                    <a href="../index.html" class="navbar__link" >INICIO</a>
+                    <!-- el id="actualPage" remarca la página actual de blanco.-->
+                </li>
+                <li class="navbar__item">
+                    <a href="../html\servicios.html" class="navbar__link" id="actualPage">SERVICIOS</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="../html\nosotros.html" class="navbar__link">NOSOTROS</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="../html\contacto.html" class="navbar__link">CONTACTO</a>
+                </li>
+            </ul>
+            <a href="#nav" class="navbar__burger">
+                <img src="../img\assets\bx-menu.svg" class="navbar__icon">
+            </a>
+            <a href="#" class="navbar__close">
+                <img src="../img\assets\bxs-x-circle.svg" class="navbar__icon">
+            </a>
+        </nav>
+
+    </header>
+
+
+    <!-- Carousel (estilos en idex.css) -->
+    <div class="carrouselContainer">
+
+        <div class="carrouselContainer__Slides fade">
+            <img src="../img/imagenes/carusel/banner1.png">
+        </div>
+
+        <div class="carrouselContainer__Slides fade">
+            <img src="../img/imagenes/carusel/banner2.png">
+        </div>
+
+        <div class="carrouselContainer__Slides fade">
+            <img src="../img/imagenes/carusel/banner3.png">
+        </div>
+
+        <div class="carrouselContainer__Slides fade">
+            <img src="../img/imagenes/carusel/banner4.png">
+        </div>
+
+    </div>
+    <div class="puntos" style="text-align:center">
+        <span class="punto"></span>
+        <span class="punto"></span>
+        <span class="punto"></span>
+        <span class="punto"></span>
+    </div>
+
+
+
+    <!-- Franja verdes -->
+    <section class="horarios">
+
+        <div class="caja1">
+            <img src="../img/iconos/horario.png" alt="logo_reloj">
+            <p>Horarios de atención <br>
+                Lunes a viernes 10 h. a 19 h.
+                <br>Sábados 9 h. a 13 h.
+            </p>
+        </div>
+
+        <div class="boton boton_horarios">
+            <button class="btserv" onclick="window.location.href='contacto.html'">Solicita un turno</button>
+        </div>
+    </section>
+
+    <!-- Tarjetas servicios -->
+    <section class="servicios">
+
+        <div class="serv">
+            <img src="../img/imagenes/servicios/img01_low.jpg" alt="img_bienvenidos">
+            <h3>ODONTOLOGÍA GENERAL</h3>
+            <p>Cuidado de la salud bucal en general. Esto incluye exámenes dentales regulares, tratamientos encías y de
+                caries, desde empastes hasta coronas dentales. Utilizamos materiales de alta calidad.
+            </p>
+            <div class="boton">
+                <button class="btserv" onclick="window.location.href='contacto.html'">TURNOS</button>
+            </div>
+        </div>
+
+        <div class="serv">
+            <img src="../img/imagenes/servicios/img02_low.jpg" alt="img_bienvenidos">
+            <h3>LIMPIEZA BUCAL</h3>
+            <p>Este procedimiento es esencial para mantener una buena salud bucal y prevenir enfermedades como caries y
+                gingivitis. Durante la limpieza dental, el odontólogo eliminará la placa y el sarro de los dientes.
+            </p>
+            <div class="boton">
+                <button class="btserv" onclick="window.location.href='contacto.html'">TURNOS</button>
+            </div>
+        </div>
+
+        <div class="serv">
+            <img src="../img/imagenes/servicios/img03_low.jpg" alt="img_bienvenidos">
+            <h3>ENDODONCIA</h3>
+            <p>Tratamos infecciones y daños en la raíz de los dientes con nuestras endodoncias. Este tratamiento de
+                conductos puede salvar dientes dañados y prevenir futuras complicaciones.
+            </p>
+            <div class="boton">
+                <button class="btserv" onclick="window.location.href='contacto.html'">TURNOS</button>
+            </div>
+        </div>
+
+        <div class="serv">
+            <img src="../img/imagenes/servicios/img04_low.jpg" alt="img_bienvenidos">
+            <h3>ODONTOLOGÍA QUIRÚRGICA</h3>
+            <p>Servicios dirigidos a la conservación del diente y restauración. Nuestra profesionalidad y las últimas
+                tecnologías nos permiten hacer procedimientos de manera indolora y cómodos. para los pacientes.
+            </p>
+            <div class="boton">
+                <button class="btserv" onclick="window.location.href='contacto.html'">TURNOS</button>
+            </div>
+        </div>
+
+
+
+        <div class="serv">
+            <img src="../img/imagenes/servicios/img05_low.jpg" alt="img_bienvenidos">
+            <h3>ODONTOLOGÍA PROTÉSICA</h3>
+            <p>Reemplaza dientes perdidos o dañados. Después del diagnóstico profesional, desarrollamos un plan de
+                tratamiento individual con resultados duraderos y naturales que se integran perfectamente en su sonrisa
+                existente.
+            </p>
+            <div class="boton">
+                <button class="btserv" onclick="window.location.href='contacto.html'">TURNOS</button>
+            </div>
+        </div>
+
+        <div class="serv">
+            <img src="../img/imagenes/servicios/img06_low.jpg" alt="img_bienvenidos">
+            <h3>BLANQUEAMIENTO</h3>
+            <p>Mejora la apariencia de tus dientes con nuestro blanqueamiento dental. Utilizamos tecnología avanzada
+                para obtener resultados rápidos y seguros. Tu sonrisa lucirá mejor que nunca.
+            </p>
+            <div class="boton">
+                <button class="btserv" onclick="window.location.href='contacto.html'">TURNOS</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Mapa -->
+    <div id="mapa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6569.201777225135!2d-58.381417!3d-34.588964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab04020fa19%3A0x1d46fde3337c4ebf!2sAv.%20del%20Libertador%20555%2C%20C1001ABF%20CABA!5e0!3m2!1ses!2sar!4v1682734848220!5m2!1ses!2sar"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer (estilos en idex.css)-->
+    <footer class="footer">
+        <div>
+            <a class="logo_bottom" href="#urgencias"><img src="../img/logo/DentiSalud-logo.png" height="40"></a>
+
+            <a class="socialmedia" href="https://www.instagram.com" target="blank"><img
+                    src="../img/iconos/instagram.png" alt="instagram_logo" width="30"></a>
+            <a class="socialmedia" href="https://www.facebook.com/" target="blank"><img src="../img/iconos/facebook.png"
+                    alt="facebook_logo" width="30"></a>
+            <a class="socialmedia"
+                href="https://api.whatsapp.com/send?phone=549115558745;text=Hola%20me%20interesa%contactarme%20con%20DentiSalud"
+                target="_blank"><img src="../img/iconos/whatsapp.png" alt="whatsapp_logo" width="30"></a>
+        </div>
+    </footer>
+
+    <script src="../js\carrousel.js"></script> <!-- Script para el funcionamiento del carrousel. - Lucas -->
+</body>
+
+</html>
